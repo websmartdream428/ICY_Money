@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.div`
   h1 {
     color: white;
     line-height: 80%;
-    font-size: 36px;
+    font-size: clamp(30px, 6vw, 36px);
     font-weight: 900;
     margin: 0;
     text-transform: uppercase;

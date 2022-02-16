@@ -9,10 +9,15 @@ export const FooterWrapper = styled.div`
   h1 {
     color: white;
     line-height: 80%;
-    font-size: 36px;
+    font-size: clamp(30px, 6vw, 36px);
     font-weight: 900;
     margin: 0;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
@@ -20,6 +25,9 @@ export const FooterMenuWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 50px;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 export const FooterMenuGroup = styled.div`
@@ -50,11 +58,16 @@ export const FooterCopyRight = styled.div`
   justify-content: space-between;
   padding: 24px 0;
   color: white;
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   p {
     margin: 0;
   }
   span {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     padding-left: 15px;
     position: relative;

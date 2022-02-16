@@ -37,13 +37,17 @@ export const IntroTitleWrapper = styled.div`
     text-align: center;
   }
   h1 {
-    font-size: 64px;
+    font-size: clamp(50px, 6vw, 64px);
     font-weight: 700;
     z-index: 2;
     color: white !important;
+    @media screen and (max-width: 768px) {
+      line-height: 50px;
+    }
   }
   h2 {
     font-size: 36px;
+    font-size: clamp(30px, 6vw, 36px);
     font-weight: 600;
     z-index: 2;
     margin-top: -26px;
@@ -53,6 +57,9 @@ export const IntroTitleWrapper = styled.div`
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: 768px) {
+      margin-top: -10px;
+    }
   }
   p {
     text-align: center;
@@ -117,6 +124,9 @@ export const IntroCardGroup = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 32px;
   margin-top: 24px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const IntroCardBody = styled.div`
