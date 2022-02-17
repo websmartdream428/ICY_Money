@@ -50,7 +50,7 @@ export const IntroTitleWrapper = styled.div`
     font-size: clamp(30px, 6vw, 36px);
     font-weight: 600;
     z-index: 2;
-    margin-top: -26px;
+    margin-top: -10px;
     margin-bottom: -4px;
     background-color: #f3ec78;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
