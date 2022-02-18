@@ -1,11 +1,11 @@
 import { Container } from "components";
 import React from "react";
 import {
-  FooterContactEmail,
-  FooterCopyRight,
+  // FooterContactEmail,
+  // FooterCopyRight,
   FooterLinkGroup,
-  FooterPolicyLinks,
-  FooterTitle,
+  // FooterPolicyLinks,
+  // FooterTitle,
   FooterVideo,
   FooterWrapper,
 } from "./footer.styled";
@@ -37,7 +37,7 @@ const Footer = () => {
         />
       </FooterVideo>
       <Container>
-        <FooterTitle>Connect</FooterTitle>
+        {/* <FooterTitle>Connect</FooterTitle> */}
         <FooterLinkGroup>
           <FaTelegram />
           <FaYoutube />
@@ -47,7 +47,7 @@ const Footer = () => {
           <FaMedium />
           <FaInstagram />
         </FooterLinkGroup>
-        <FooterContactEmail>hello@icy.com</FooterContactEmail>
+        {/* <FooterContactEmail>hello@icy.com</FooterContactEmail>
         <FooterPolicyLinks>
           <a href="https://google.com" target="_blank" rel="noreferrer">
             Media Inquiry
@@ -59,7 +59,7 @@ const Footer = () => {
         </FooterPolicyLinks>
         <FooterCopyRight>
           &copy; {new Date().getFullYear()} ETHDenver
-        </FooterCopyRight>
+        </FooterCopyRight> */}
       </Container>
     </FooterWrapper>
   );

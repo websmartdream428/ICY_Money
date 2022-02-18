@@ -105,13 +105,24 @@ export const FooterLinkGroup = styled.div`
   font-size: 36px;
   align-items: start;
   .icon-discord {
-    font-size: 70px;
+    font-size: 80px;
   }
   svg {
-    margin: 0 15px;
+    margin: 0 25px;
     cursor: pointer;
   }
-  margin-bottom: 40px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    font-size: 50px !important;
+    align-items: center;
+    svg {
+      margin: 10px 25px;
+      cursor: pointer;
+    }
+    .icon-discord {
+      font-size: 50px;
+    }
+  }
 `;
 
 export const FooterContactEmail = styled.div`
