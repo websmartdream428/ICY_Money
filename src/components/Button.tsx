@@ -2,18 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const ButtonWrapper = styled.div<{ type: string }>`
-  background: ${({ type }) =>
-    type === "white"
-      ? "#fff"
-      : "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)"};
-  /* transition: all 0.3s; */
+  background: ${({ type }) => (type === "white" ? "#000" : "#000")};
+  transition: all 0.3s;
   :hover {
-    background: linear-gradient(120deg, #c2e9fb 0%, #a1c4fd 100%);
+    background: #010255;
   }
+
   border-radius: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #003b66 !important;
+  color: #ffffff !important;
   padding: 9px 0;
   font-weight: 500;
   font-family: "Poppins", sans-serif;

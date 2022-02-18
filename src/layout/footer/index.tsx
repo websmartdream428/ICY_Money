@@ -30,13 +30,7 @@ import {
 const Footer = () => {
   return (
     <FooterWrapper>
-      <FooterVideo
-        autoPlay
-        // autoPlay
-        playsInline
-        muted
-        loop
-      >
+      <FooterVideo autoPlay playsInline muted loop>
         <source
           src="https://www.youtube.com/embed/eTD0WWFIDAg?autohide=1&autoplay=0&controls=0&enablejsapi=1&iv_load_policy=3&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&wmode=opaque&origin=https%3A%2F%2Fwww.ethdenver.com&widgetid=1"
           type="video/mp4"

@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   h1 {
-    color: white;
+    color: black;
     line-height: 80%;
     font-size: clamp(30px, 6vw, 36px);
     font-weight: 900;

@@ -4,7 +4,7 @@ import introBG from "assets/image/bg.svg";
 import introBG1 from "assets/image/bg-1.png";
 
 export const LandingWrapper = styled.div`
-  background-color: #131419;
+  background: linear-gradient(90deg, #babbb5, #b7becc, #d0d4b9);
 `;
 
 export const IntroWrapper = styled.div`
@@ -40,7 +40,7 @@ export const IntroTitleWrapper = styled.div`
     font-size: clamp(50px, 6vw, 64px);
     font-weight: 700;
     z-index: 2;
-    color: white !important;
+    color: black !important;
     @media screen and (max-width: 768px) {
       line-height: 50px;
     }
@@ -53,7 +53,7 @@ export const IntroTitleWrapper = styled.div`
     margin-top: -10px;
     margin-bottom: -4px;
     background-color: #f3ec78;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: linear-gradient(120deg, #4986e7 0%, #6ac9f5 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -66,7 +66,7 @@ export const IntroTitleWrapper = styled.div`
     margin: 7px 0 25px 0;
     font-weight: 400;
     z-index: 2;
-    color: #d7d7d7 !important;
+    color: #555 !important;
   }
 `;
 
@@ -92,7 +92,7 @@ export const IntroCardWrapper = styled.div`
     font-size: 36px;
     line-height: 50px;
     text-align: center;
-    color: white !important;
+    color: black !important;
   }
   & > p {
     font-weight: 400;
@@ -111,7 +111,7 @@ export const IntroCardWrapper = styled.div`
     z-index: 9999;
     line-height: 20px;
     background-color: #f3ec78;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: linear-gradient(120deg, #4986e7 0%, #6ac9f5 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -150,7 +150,6 @@ export const IntroCardBody = styled.div`
 
 export const StableWrapper = styled.div`
   padding: 90px 0;
-  background-color: #0b0b0f !important;
 `;
 
 export const StableTitleWrapper = styled.div`
@@ -163,9 +162,9 @@ export const StableTitleWrapper = styled.div`
     font-size: 36px;
     text-align: center;
     line-height: 35px;
-    color: white !important;
+    color: black !important;
   }
-  p {
+  & > p {
     font-weight: 500;
     font-size: 18px;
     text-align: center;
@@ -173,7 +172,7 @@ export const StableTitleWrapper = styled.div`
     line-height: 20px;
     margin-top: 10px;
     background-color: #f3ec78;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: linear-gradient(120deg, #4986e7 0%, #6ac9f5 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -181,14 +180,69 @@ export const StableTitleWrapper = styled.div`
 `;
 
 export const StableCardWrapper = styled.div`
-  padding: 32px;
+  padding: 50px;
   margin: 50px auto 0px;
   max-width: 820px;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(195, 198, 212);
   box-shadow: rgb(0 0 0 / 30%) 0px 8px 32px;
   position: relative;
   box-sizing: border-box;
   max-width: 638px;
   width: 100%;
+`;
+
+export const StableButtonGroup = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+`;
+
+export const StableForm = styled.div`
+  width: 90%;
+  margin: auto;
+`;
+
+export const StableFormLabel = styled.div`
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-weight: 600;
+  }
+`;
+
+export const StableInput = styled.div`
+  margin-top: 10px;
+  display: flex;
+  border-radius: 100px;
+  background: white;
+  padding: 10px 20px;
+  input {
+    border: none;
+    outline: none;
+    width: -webkit-fill-available;
+  }
+`;
+
+export const ExchangeSymbol = styled.div`
+  cursor: pointer;
+  display: flex;
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(150, 159, 201);
+  border-radius: 100px;
+  color: white;
+  svg {
+    transform: rotate(90deg);
+  }
+`;
+
+export const StableSwapBtn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 `;
