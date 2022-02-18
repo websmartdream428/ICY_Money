@@ -4,7 +4,7 @@ import introBG from "assets/image/bg.svg";
 import introBG1 from "assets/image/bg-1.png";
 
 export const LandingWrapper = styled.div`
-  background: linear-gradient(90deg, #e4e6de, #cedeff, #f6fdce);
+  background: linear-gradient(80deg, #fdf7e5, #ced5f2, #fffdd3);
 `;
 
 export const IntroWrapper = styled.div`
