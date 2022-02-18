@@ -4,7 +4,7 @@ import {
   StableCardWrapper,
   StableTitleWrapper,
   StableWrapper,
-} from "./landing/landing.styled";
+} from "./landing.styled";
 
 const StablePart = () => {
   return (

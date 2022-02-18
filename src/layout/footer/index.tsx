@@ -1,16 +1,71 @@
 import { Container } from "components";
 import React from "react";
 import {
+  FooterContactEmail,
   FooterCopyRight,
-  FooterMenuGroup,
-  FooterMenuWrapper,
+  FooterLinkGroup,
+  FooterPolicyLinks,
+  FooterTitle,
+  FooterVideo,
   FooterWrapper,
 } from "./footer.styled";
 
+import {
+  FaYoutube,
+  FaTelegram,
+  FaTwitter,
+  FaDiscord,
+  FaMeetup,
+  FaMedium,
+  FaInstagram,
+} from "react-icons/fa";
+
+// import {
+//   FooterCopyRight,
+//   FooterMenuGroup,
+//   FooterMenuWrapper,
+//   FooterWrapper,
+// } from "./footer.styled";
+
 const Footer = () => {
   return (
-    <Container>
-      <FooterWrapper>
+    <FooterWrapper>
+      <FooterVideo
+        autoPlay
+        src="https://www.youtube.com/embed/eTD0WWFIDAg?autohide=1&autoplay=0&controls=0&enablejsapi=1&iv_load_policy=3&loop=0&modestbranding=1&playsinline=1&rel=0&showinfo=0&wmode=opaque&origin=https%3A%2F%2Fwww.ethdenver.com&widgetid=1"
+      ></FooterVideo>
+      <Container>
+        <FooterTitle>Connect</FooterTitle>
+        <FooterLinkGroup>
+          <FaTelegram />
+          <FaYoutube />
+          <FaTwitter />
+          <FaDiscord className="icon-discord" />
+          <FaMeetup />
+          <FaMedium />
+          <FaInstagram />
+        </FooterLinkGroup>
+        <FooterContactEmail>hello@icy.com</FooterContactEmail>
+        <FooterPolicyLinks>
+          <a href="https://google.com" target="_blank" rel="noreferrer">
+            Media Inquiry
+          </a>{" "}
+          /{" "}
+          <a href="https://google.com" target="_blank" rel="noreferrer">
+            Privacy Policy
+          </a>
+        </FooterPolicyLinks>
+        <FooterCopyRight>
+          &copy; {new Date().getFullYear()} ETHDenver
+        </FooterCopyRight>
+      </Container>
+    </FooterWrapper>
+  );
+};
+
+export default Footer;
+
+/* <FooterWrapper>
         <h1>
           Icy
           <br />
@@ -50,9 +105,4 @@ const Footer = () => {
       <FooterCopyRight>
         <p>© {new Date().getFullYear()} TrustSwap Inc. All Rights Reserved.</p>
         <span>Ethereum Mainnet</span>
-      </FooterCopyRight>
-    </Container>
-  );
-};
-
-export default Footer;
+      </FooterCopyRight> */

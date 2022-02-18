@@ -1,5 +1,5 @@
 import { Footer } from "layout";
-import StablePart from "Pages/StablePart";
+import StablePart from "Pages/landing/StablePart";
 import React from "react";
 import IntroPart from "./IntroPart";
 import { LandingWrapper } from "./landing.styled";
