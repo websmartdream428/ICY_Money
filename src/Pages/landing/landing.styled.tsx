@@ -4,11 +4,11 @@ import introBG from "assets/image/bg.svg";
 import introBG1 from "assets/image/bg-1.png";
 
 export const LandingWrapper = styled.div`
-  background: linear-gradient(90deg, #babbb5, #b7becc, #d0d4b9);
+  background: linear-gradient(90deg, #e4e6de, #cedeff, #f6fdce);
 `;
 
 export const IntroWrapper = styled.div`
-  background: url(${introBG});
+  /* background: url(${introBG}); */
   background-size: 100% 100%;
   background-position: center;
   position: relative;
@@ -18,7 +18,7 @@ export const IntroWrapper = styled.div`
   ::before {
     position: absolute;
     content: "";
-    background-image: url(${introBG1});
+    /* background-image: url(${introBG1}); */
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
