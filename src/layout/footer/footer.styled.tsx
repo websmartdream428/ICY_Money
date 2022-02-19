@@ -112,7 +112,7 @@ export const FooterLinkGroup = styled.div`
     cursor: pointer;
   }
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    /* flex-direction: column; */
     font-size: 50px !important;
     align-items: center;
     svg {
