@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 import introBG from "assets/image/bg.svg";
-import introBG1 from "assets/image/bg-1.png";
 
 export const LandingWrapper = styled.div`
   background: linear-gradient(80deg, #fdf7e5, #ced5f2, #fffdd3);
+`;
+
+export const WelcomeWrapper = styled.div`
+  min-height: 100vh;
 `;
 
 export const IntroWrapper = styled.div`
@@ -14,21 +17,12 @@ export const IntroWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-
-  ::before {
-    position: absolute;
-    content: "";
-    /* background-image: url(${introBG1}); */
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    opacity: 0.15;
-    top: -10%;
-  }
 `;
 
 export const IntroTitleWrapper = styled.div`
+  transition: all 1s;
+  opacity: 0;
+  transform: scale(0);
   padding: 180px 0 100px;
   h1,
   h2,
@@ -79,7 +73,7 @@ export const IntroButtonWrapper = styled.div`
 `;
 
 export const IntroCardWrapper = styled.div`
-  padding-top: 180px;
+  transition: all 1s;
   h1,
   h2,
   p {
@@ -101,7 +95,7 @@ export const IntroCardWrapper = styled.div`
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    color: #d7d7d7 !important;
+    color: #555 !important;
   }
   & > h2 {
     text-align: center;
