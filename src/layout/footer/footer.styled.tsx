@@ -116,11 +116,8 @@ export const FooterLinkGroup = styled.div`
     font-size: 50px !important;
     align-items: center;
     svg {
-      margin: 10px 25px;
+      margin: 10px;
       cursor: pointer;
-    }
-    .icon-discord {
-      font-size: 50px;
     }
   }
 `;
