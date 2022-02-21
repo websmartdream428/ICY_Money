@@ -104,10 +104,16 @@ export const FooterLinkGroup = styled.div`
   color: white;
   font-size: 36px;
   align-items: start;
+  svg {
+    :hover {
+      transform: scale(1.1);
+    }
+  }
   .icon-discord {
     font-size: 80px;
   }
   svg {
+    transition: all 0.3s;
     margin: 0 25px;
     cursor: pointer;
   }

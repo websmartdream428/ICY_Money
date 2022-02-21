@@ -74,6 +74,9 @@ export const IntroButtonWrapper = styled.div`
 
 export const IntroCardWrapper = styled.div`
   transition: all 1s;
+  transform: translateY(100px);
+  opacity: 0;
+  padding-bottom: 100px;
   h1,
   h2,
   p {
@@ -109,7 +112,6 @@ export const IntroCardWrapper = styled.div`
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 90px 0 100px;
   }
 `;
 
@@ -121,6 +123,7 @@ export const IntroCardGroup = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+  padding-bottom: 90px;
 `;
 
 export const IntroCardBody = styled.div`

@@ -6,6 +6,7 @@ const ButtonWrapper = styled.div<{ type: string }>`
   transition: all 0.3s;
   :hover {
     background: #010255;
+    transform: scale(1.1);
   }
 
   border-radius: 15px;
